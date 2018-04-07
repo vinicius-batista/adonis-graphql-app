@@ -1,8 +1,8 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
+  "name": "adonis-graphql-app",
+  "version": "1.0.0",
   "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "description": "Adonisjs boilerplate for Graphql server",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
