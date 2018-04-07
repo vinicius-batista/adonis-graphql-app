@@ -5,8 +5,8 @@ const { validateAll } = use('Validator')
 const GraphQLError = use('Adonis/Addons/GraphQLError')
 const User = use('App/Models/User')
 
-const registerUser = (_, { input }) => {
-  return validateAll({ ...input }, registerRules)
+const registerUser = (_, { input }) =>
+  validateAll({ ...input }, registerRules)
     .then(validation => {
       if (validation.fails()) {
         throw new GraphQLError('Validation Failed', validation.messages())
@@ -16,7 +16,6 @@ const registerUser = (_, { input }) => {
       return User.create(userData)
     })
     .then(() => 'User registed successfully.')
-}
 
 module.exports = {
   Mutation: {
