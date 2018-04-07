@@ -15,7 +15,7 @@ const registerUser = (_, { input }) =>
       const { passwordConfirm, ...userData } = input
       return User.create(userData)
     })
-    .then(() => 'User registed successfully.')
+    .then(() => 'User registred successfully.')
 
 module.exports = {
   Mutation: {
