@@ -1,0 +1,14 @@
+input RegisterInput {
+  username: String!,
+  email: String!,
+  password: String!,
+  passwordConfirm: String!
+}
+
+type Mutation {
+  registerUser (input: RegisterInput!): String
+}
+
+type Query {
+  user: String
+}

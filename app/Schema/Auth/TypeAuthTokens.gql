@@ -1,5 +1,5 @@
 type AuthTokens {
   token: String!,
-  type: String,
+  type: String!,
   refreshToken: String
 }
