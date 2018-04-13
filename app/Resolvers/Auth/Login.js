@@ -1,11 +1,9 @@
 'use strict'
 
-const loginUser = (_, { input }, { auth }) => {
-  const { email, password } = input
-  return auth
+const loginUser = (_, { input: { email, password } }, { auth }) =>
+  auth
     .withRefreshToken()
     .attempt(email, password)
-}
 
 module.exports = {
   Mutation: {
