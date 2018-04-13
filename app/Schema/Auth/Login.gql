@@ -1,8 +1,8 @@
-input LoginInput {
+input LoginUserInput {
   email: String!,
   password: String!
 }
 
 type Mutation {
-  login(input: LoginInput!): AuthTokens!
+  loginUser (input: LoginUserInput!): AuthTokens!
 }
