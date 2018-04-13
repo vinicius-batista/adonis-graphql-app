@@ -8,7 +8,3 @@ input RegisterInput {
 type Mutation {
   registerUser (input: RegisterInput!): String
 }
-
-type Query {
-  user: String
-}
